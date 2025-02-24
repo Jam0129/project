@@ -1,36 +1,49 @@
 *{margin: 0; padding: 0;}
 
+body{
+    font-family: ;
+}
+
 img{
     display: block;
 }
-ul,li{
-    list-style: none;
-}
+
 a{
-color: black;
 text-decoration: none;
 text-align: center;
+color: black;
 }
 
-#profile{
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    top: 2%;
-    right: 2%;
+
+nav{
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
 }
 
-.person{
-    width: 100px;
-    height: 200px;
+
+ul{
+    margin-left: 90vw;
+}
+
+li{
     float: left;
-    margin: 50px 0;
-    
+    margin: 0 10px;
+    list-style: none;
+}
+
+nav>a{
+    position: relative;
+    top: 40%;
+    left: 10%;
 }
 
 main{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -41,42 +54,41 @@ main{
     width: 28%;
     height: 100vh;
     flex: 1 1 28%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(0.4)
+
 }
+
 
 .fir{
 
     background-image: url(https://togetherfolder.s3.ap-northeast-2.amazonaws.com/fuckuoka_main.jpg);
-    width: 100%;
-    height: 100vh;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover
 }
 .sec{
 
     background-image: url(https://togetherfolder.s3.ap-northeast-2.amazonaws.com/laos_main.jpg);
-    width: 100%;
-    height: 100vh;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover
 }
 .thi{
 
     background-image: url(https://togetherfolder.s3.ap-northeast-2.amazonaws.com/cebu_main.jpg);
-    width: 100%;
-    height: 100vh;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover
-
 }
 
 h1{
     text-align: center;
-    font-size: 150px;
+    font-size: 100px;
     margin-top: 50%;
-    color: rgba(255, 255, 255, 0.5)
+    color: rgba(255, 255, 255, 0.6);
+
+
+}
+
+h4{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10%;
+    color: rgb(255, 255, 255);
 
 
 }
@@ -84,8 +96,4 @@ h1{
     float: left;
     margin: 0 auto;
 
-}
-
-.person{
-    margin: 5% 0;
 }
