@@ -1,11 +1,13 @@
 *{margin: 0; padding: 0;}
 
-body{
-    font-family: ;
-    background-color: rgb(253, 230, 233);
+
+body {
+    background: url("https://togetherfolder.s3.ap-northeast-2.amazonaws.com/fukuoka/japan2.jpg") center center / cover,
+     rgba(255, 255, 255, 0.76);
+    background-blend-mode: overlay;
 }
 
-img{
+img,video{
     display: block;
 }
 
@@ -48,21 +50,46 @@ nav>a{
     height: 100vh;
 }
 
+
+
+.item img{
+    background-size: cover center center;
+    width: 60%;
+    height: auto;
+    justify-self: center;
+    border: 2px solid white;
+    margin: 3% auto;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7)
+    
+
+}
+
+.item video{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    justify-self: center;
+    margin: 3% auto;
+    border: 2px solid white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3)
+}
+.vid>h1{
+    display: block;
+    margin: 5% auto;
+}
+
+.grid{
+    margin:10% 10%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;  
+    align-items: center;
+    justify-items: center;
+    width: 80%;
+}
+
 .item{
-    width: 30%;
-    height: 70%;
-    background-color: white;
-    margin: 10% auto;
-    border: 3px rgb(253, 225, 230) solid;
-    border-radius: 50px;
-}
-
-.item>h1{
+    width: 100%;
     text-align: center;
-}
-
-.j1{
-    background: url('https://togetherfolder.s3.ap-northeast-2.amazonaws.com/fukuoka/japan2.jpg') no-repeat center center;
-    background-size: cover;
-
 }
