@@ -1,0 +1,289 @@
+*{margin: 0; padding: 0;}
+body{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+img{display: block;}
+a{
+text-decoration: none;
+text-align: center;
+color: #000;
+}
+
+/* header */
+nav{
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #fff;
+}
+nav > ul{
+    margin-left: 90vw;
+}
+nav > ul > li{
+    float: left;
+    margin: 0 10px;
+    list-style: none;
+}
+nav>a{
+    position: relative;
+    top: 40%;
+    left: 10%;
+}
+/* /header */
+
+/* main */
+#main{
+  width: 60%;
+  height: auto;
+  border: 1px solid #d9d9d9;
+  border-top: none;
+  border-bottom: none;
+  margin-top: 10%;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* /main */
+
+/* nav */
+.nav{
+  width: 60%;
+  height: 10vh;
+  line-height: 10vh;
+  border: 1px solid #d9d9d9;
+  position: fixed;
+  top: 10%;
+  left: 19.95%;
+  background-color: #fff;
+  z-index: 1;
+}
+.nav a{
+  float: left;
+}
+.nav i{
+  margin-left: 15vh;
+  font-size: 30px;
+}
+.nav h2{
+  text-align: center;
+}
+/* /nav */
+
+/* profile */
+.profile{
+  width: 60%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.profile > .img{
+  margin-left: 100px;
+  border: 1px solid #d9d9d9;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-image: url(https://togetherfolder.s3.ap-northeast-2.amazonaws.com/profile-park.jpg);
+  background-size: cover;
+}
+.user{
+  display: inline-block;
+}
+.user > .name{
+  padding-left: 20px;
+  text-align: center;
+}
+.user > .name:hover{
+  color: #a1a0a0;
+}
+.user > .follow{
+  color: #15a2d9;
+}
+.user > .follow:hover{
+  color: #095370;
+}
+/* /profile */
+
+/* image-container */
+.image-container{
+  position: relative;
+  background-color: black;
+  width: 80%;
+  height: 80vh;
+  left: 10%;
+}
+.image-container > video{
+  position: absolute;
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+  bottom: 0%;
+}
+.image-container > img{
+  position: absolute;
+  max-width: 80%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  left: 10%;
+  bottom: 0%;
+}
+
+.image-container > .toggle-right{
+  position: absolute;
+  bottom: 50%;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff00;
+  border: none;
+}
+.toggle-right > i{
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+.image-container > .toggle-left{
+  position: absolute;
+  bottom: 50%;
+  left: 5%;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff00;
+  border: none;
+}
+.toggle-left > i{
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+.dots{
+  position: absolute;
+  display: flex;
+  left: 50%;
+  bottom: 5%;
+  gap: 10px;
+}
+.dots span{
+  width: 10px;
+  height: 10px;
+  background-color: #7a7a7a;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+.dots span.active {
+  background-color: #ffffff; 
+}
+.image-container img.active, .image-container video.active {
+  display: block;
+}
+.image-container img.hidden, .image-container video.hidden {
+  display: none;
+}
+
+/* /image-container */
+
+/* icon */
+.icon{
+  width: 80%;
+  height: 5vh;
+  margin-top: 3vh;
+  margin-left: 10vh;
+
+}
+.icon button{
+  border: none;
+  background-color: #ffffff00;
+}
+.icon i{
+  font-size: 30px;
+  margin-left: 1vw;
+}
+.icon > span:nth-child(4){
+  float: right;
+}
+/* /icon */
+
+/* like */
+.like{
+  width: 60%;
+  height: 3vh;
+  margin-left: 12vh;
+}
+/* /like */
+
+/* comment */
+.comment{
+  width: 80%;
+  height: 15vh;
+  margin-left: 12vh;
+}
+.comment .userimg{
+  border: 1px solid #d9d9d9;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-image: url(https://togetherfolder.s3.ap-northeast-2.amazonaws.com/profile-park.jpg);
+  background-size: cover;
+  float: left;
+}
+.comment .username{
+  margin-left: 10px;
+  float: left;
+}
+.comment .cm{
+  font-size: 15px;
+}
+.comment .hashtag{
+  color: #00376b;
+  font-size: 15px;
+  float: left;
+}
+.reply{
+  width: 80%;
+  height: 10vh;
+  margin-left: 12vh;
+}
+.reply .userimg{
+  border: 1px solid #d9d9d9;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-image: url(https://togetherfolder.s3.ap-northeast-2.amazonaws.com/Laos/hangunza.jpg);
+  background-size: cover;
+  margin-right: 10px;
+  float: left;
+}
+.reply .asd{
+  font-size: 13px;
+}
+.asd > .name{
+  font-weight: bold;
+  float: left;
+  margin-right: 10px;
+}
+.asd > i{
+  float: right;
+}
+.asd > .time{
+  color: #a1a0a0;
+  float: left;
+}
+.asd > .likey{
+  color: #a1a0a0;
+  margin-left: 30px;
+}
+.asd > .write{
+  color: #a1a0a0;
+  margin-left: 10px;
+}
+/* /comment */
