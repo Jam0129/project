@@ -17,21 +17,20 @@ $(window).on('scroll',function(){
         'transition':'height all 0.1 linear'
     });
 
-    if (스크롤비율 < 0.1) {
+    if (스크롤양>0 && 스크롤비율 < 0.1) {
         $('.contbar').css('display','block')
         $('.la1').css('opacity', '1');
         $('.la2, .la3, .la4').css('opacity', '0');
     } else if (스크롤비율 >= 0.1 && 스크롤비율 < 0.4) {
-        $('.la2').css('opacity', '1');
-        $('.la1').css('opacity', '1');
+        $('.la1, .la2').css('opacity', '1');
         $('.la3, .la4').css('opacity', '0');
     } else if (스크롤비율 >= 0.4 && 스크롤비율 < 0.6) {
-        $('.la3').css('opacity', '1');
-        $('.la1, .la2').css('opacity', '1');
+        $('.la1, .la2, .la3').css('opacity', '1');
         $('.la4').css('opacity', '0');
     } else if (스크롤비율 >= 0.6) {
-        $('.la4').css('opacity', '1');
-        $('.la1, .la2, .la3').css('opacity', '1');
+        $('.la1, .la2, .la3, .la4').css('opacity', '1');
+    } else if (스크롤양 === 0) {
+        $('.la1, .la2, .la3, .la4').css('opacity', '0');
     }
     if (스크롤비율 < 0.25) {
         $('body').css('background-image', 'url("https://togetherfolder.s3.ap-northeast-2.amazonaws.com/fukuoka/japan_marin2.jpg")');

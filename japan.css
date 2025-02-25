@@ -3,7 +3,7 @@
 
 body {
     background: url("https://togetherfolder.s3.ap-northeast-2.amazonaws.com/fukuoka/japan_marin2.jpg") center center, no-repeat,
-     rgba(250, 242, 242, 0.7);
+     rgba(250, 242, 242, 0.85);
     background-blend-mode: overlay;
     transition:all 0.3s ease-in-out;
 }
@@ -31,7 +31,7 @@ nav{
 .control{
     width: 0.5vw;
     height: 50vh;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
     position: fixed;
     top: 30vh;
     left: 5vw;
