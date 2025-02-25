@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="Laos-1.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="Laos-1.js"></script>
+  <script src="user.js"></script>
 </head>
 <body>
   <!-- header -->
@@ -30,8 +31,6 @@
           <a href="../main.html" method="get">
             <i class="fa-solid fa-chevron-left"></i>
           </a>
-        </span>
-        <span>
           <h2>게시물</h2>
         </span>
       </div>
@@ -49,7 +48,7 @@
       <!-- /profile -->
 
       <!-- image-container -->
-      <div class="image-container">
+      <div class="image-container icontainer">
         <img class="active" src="https://togetherfolder.s3.ap-northeast-2.amazonaws.com/Laos/blue+lagoon+3.jpg" alt="">
         <video class="hidden" autoplay muted loop >
           <source src="https://togetherfolder.s3.ap-northeast-2.amazonaws.com/Laos/blue+lagoon+3.mp4"
@@ -57,13 +56,13 @@
         </video>
         <button class="toggle-right next-icon"><i class="fa-solid fa-circle-chevron-right" style="color: #ded9d9;"></i></button>
         <button class="toggle-left prev-icon"><i class="fa-solid fa-circle-chevron-right fa-flip-horizontal" style="color: #ded9d9;"></i></button>
-        <div class="dots"></div>
+        <div class="dots1"></div>
       </div>
       <!-- /image-container -->
 
       <!-- icon -->
       <div class="icon">
-        <span><button><i class="fa-regular fa-heart"></i></button></span>
+        <span><button><i class="fa-regular fa-heart commentheart"></i></button></span>
         <span><button><i class="fa-regular fa-comment"></i></button></span>
         <span><button><i class="fa-regular fa-paper-plane"></i></button></span>
         <span><button><i class="fa-regular fa-bookmark"></i></button></span>
@@ -72,7 +71,7 @@
 
       <!-- like -->
       <div class="like">
-        <h4>좋아요 1.1만개</h4>
+        <h4>좋아요 1개</h4>
       </div>
       <!-- /like -->
 
@@ -82,15 +81,15 @@
           <span class="userimg"><!-- 프사 --></span>
           <h5 class="username">parkgeonwoo</h5>
           <p class="cm">&nbsp;얼굴 깨질뻔함ㅋㅋ<br><br>.<br>.<br>.<br>.</p>
-          <p class="hashtag">&nbsp;#라오스 #방비앵 #블루라군3 #다이빙</p>
+          <a href="#" class="hashtag">&nbsp;#라오스 #방비앵 #블루라군3 #다이빙</a>
         </span>
       </div>
       <div class="reply">
         <span class="userimg"><!-- 프사 --></span>
-        <span class="asd">
-          <a class="name" href="#">hangunza</a>
+        <span class="otheruser">
+          <a class="name" href="#">hangunza12</a>
           <p>저기서 다이빙 재밌었는데</p>   
-          <i class="fa-regular fa-heart fa-2xs"></i>
+          <i class="fa-regular fa-heart fa-2xs replyheart"></i>
           <p class="time">7시간</p>
           <a href="#" class="likey">&nbsp;좋아요 1개</a>
           <a href="#" class="write">답글달기</a>
@@ -98,33 +97,31 @@
       </div>
       <!-- /comment -->
 
+      
       <!-- profile2 -->
       <div class="profile">
-        <span class="img"><!-- 프사 --></span>
+        <span class="img2"><!-- 프사 --></span>
         <span class="user">
-          <a class="name" href="#">parkgeonwoo</a>
+          <a class="name" href="#">shimjaemin</a>
           <span>&nbsp;•&nbsp;</span>
           <a class="follow" href="#">팔로우</a>
         </span>
       </div>
       <!-- /profile2 -->
 
-      <!-- image-container -->
-      <div class="image-container">
-        <img class="active" src="https://togetherfolder.s3.ap-northeast-2.amazonaws.com/Laos/blue+lagoon+3.jpg" alt="">
-        <video class="hidden" autoplay muted loop >
-          <source src="https://togetherfolder.s3.ap-northeast-2.amazonaws.com/Laos/blue+lagoon+3.mp4"
-          type="video/mp4">
-        </video>
+      <!-- image-container2 -->
+      <div class="image-container icontainer2">
+        <img class="active" src="https://togetherfolder.s3.ap-northeast-2.amazonaws.com/Laos/blue+ragoon+1.jpg" alt="">
+        <img class="hideen" src="https://togetherfolder.s3.ap-northeast-2.amazonaws.com/Laos/blue+ragoon+1(1).jpg" alt="">
         <button class="toggle-right next-icon"><i class="fa-solid fa-circle-chevron-right" style="color: #ded9d9;"></i></button>
         <button class="toggle-left prev-icon"><i class="fa-solid fa-circle-chevron-right fa-flip-horizontal" style="color: #ded9d9;"></i></button>
-        <div class="dots"></div>
+        <div class="dots2"></div>
       </div>
-      <!-- /image-container -->
+      <!-- /image-container2 -->
 
       <!-- icon -->
       <div class="icon">
-        <span><button><i class="fa-regular fa-heart"></i></button></span>
+        <span><button><i class="fa-regular fa-heart commentheart2"></i></button></span>
         <span><button><i class="fa-regular fa-comment"></i></button></span>
         <span><button><i class="fa-regular fa-paper-plane"></i></button></span>
         <span><button><i class="fa-regular fa-bookmark"></i></button></span>
@@ -132,34 +129,92 @@
       <!-- /icon -->
 
       <!-- like -->
-      <div class="like">
-        <h4>좋아요 1.1만개</h4>
+      <div class="like2">
+        <h4>좋아요 1개</h4>
       </div>
       <!-- /like -->
 
-      <!-- comment -->
+      <!-- comment2 -->
       <div class="comment">
         <span>
-          <div class="userphoto"><!-- 프사 --></div>
-          <h5 class="username">parkgeonwoo</h5>
-          <p class="cm">&nbsp;얼굴 깨질뻔함ㅋㅋ</p>
-          .<br>
-          .<br>
-          .<br>
-          <p class="hashtag">&nbsp;#라오스 #방비앵 #블루라군3 #다이빙</p>
+          <span class="userimg2"><!-- 프사 --></span>
+          <h5 class="username">shimjaemin</h5>
+          <p class="cm">&nbsp;이쁘긴해</p>
+          <br><br><br><br>
+          <a href="#" class="hashtag">&nbsp;&nbsp;#라오스 #방비앵 #블루라군1</a>
         </span>
       </div>
       <div class="reply">
-        <span class="userphoto"><!-- 프사 --></span>
-        <span class="asd">
-          <a class="name" href="#">hangunza</a>
-          <p>저기서 다이빙 재밌었는데</p>          
+        <span class="userimg2"><!-- 프사 --></span>
+        <span class="otheruser">
+          <a class="name" href="#">ho_0320</a>
+          <p>왕 굼뱅이 사진은 없냐ㅋㅋㅋㅋㅋ</p>   
+          <i class="fa-regular fa-heart fa-2xs replyheart"></i>
+          <p class="time">7시간</p>
+          <a href="#" class="likey">&nbsp;좋아요 1개</a>
+          <a href="#" class="write">답글달기</a>
         </span>
       </div>
-      <!-- /comment -->
-    </div>
-  </div>
-  <!-- /main -->
+      <!-- /comment2 -->
 
+
+      <!-- profile3 -->
+      <div class="profile">
+        <span class="img3"><!-- 프사 --></span>
+        <span class="user">
+          <a class="name" href="#">shimjaemin</a>
+          <span>&nbsp;•&nbsp;</span>
+          <a class="follow" href="#">팔로우</a>
+        </span>
+      </div>
+      <!-- /profile3 -->
+    
+      <!-- image-container3 -->
+      <div class="image-container icontainer3">
+        <img class="active" src="https://togetherfolder.s3.ap-northeast-2.amazonaws.com/Laos/blue+ragoon+1.jpg" alt="">
+        <img class="hideen" src="https://togetherfolder.s3.ap-northeast-2.amazonaws.com/Laos/blue+ragoon+1(1).jpg" alt="">
+        <button class="toggle-right next-icon"><i class="fa-solid fa-circle-chevron-right" style="color: #ded9d9;"></i></button>
+        <button class="toggle-left prev-icon"><i class="fa-solid fa-circle-chevron-right fa-flip-horizontal" style="color: #ded9d9;"></i></button>
+        <div class="dots3"></div>
+      </div>
+      <!-- /image-container3 -->
+    
+      <!-- icon -->
+      <div class="icon">
+        <span><button><i class="fa-regular fa-heart commentheart3"></i></button></span>
+        <span><button><i class="fa-regular fa-comment"></i></button></span>
+        <span><button><i class="fa-regular fa-paper-plane"></i></button></span>
+        <span><button><i class="fa-regular fa-bookmark"></i></button></span>
+      </div>
+      <!-- /icon -->
+    
+      <!-- like -->
+      <div class="like3">
+        <h4>좋아요 1개</h4>
+      </div>
+      <!-- /like -->
+    
+      <!-- comment3 -->
+      <div class="comment">
+        <span>
+          <span class="userimg3"><!-- 프사 --></span>
+          <h5 class="username">parkgeonwoo</h5>
+          <p class="cm">&nbsp;이쁘긴해</p>
+          <br><br><br><br>
+          <a href="#" class="hashtag">&nbsp;&nbsp;#라오스 #방비앵 #블루라군1</a>
+        </span>
+      </div>
+      <div class="reply">
+        <span class="userimg3"><!-- 프사 --></span>
+        <span class="otheruser">
+          <a class="name" href="#">s_terry0129</a>
+          <p>왕 굼뱅이 사진은 없냐ㅋㅋㅋㅋㅋ</p>   
+          <i class="fa-regular fa-heart fa-2xs replyheart"></i>
+          <p class="time">7시간</p>
+          <a href="#" class="likey">&nbsp;좋아요 1개</a>
+          <a href="#" class="write">답글달기</a>
+        </span>
+      </div>
+      <!-- /comment3 -->
 </body>
 </html>
