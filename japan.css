@@ -2,9 +2,10 @@
 
 
 body {
-    background: url("https://togetherfolder.s3.ap-northeast-2.amazonaws.com/fukuoka/japan2.jpg") center center / cover,
-     rgba(255, 255, 255, 0.76);
+    background: url("https://togetherfolder.s3.ap-northeast-2.amazonaws.com/fukuoka/japan_marin2.jpg") center center, no-repeat,
+     rgba(250, 242, 242, 0.7);
     background-blend-mode: overlay;
+    transition:all 0.3s ease-in-out;
 }
 
 img,video{
@@ -27,6 +28,58 @@ nav{
     z-index: 1;
 }
 
+.control{
+    width: 0.5vw;
+    height: 50vh;
+    border: 1px solid rgb(0, 0, 0);
+    position: fixed;
+    top: 30vh;
+    left: 5vw;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.contbar{
+    background-color: rgb(255, 185, 185);
+    width: 0.5vw;
+    height: 50vh;
+    position: fixed;
+    display: none;
+
+}
+
+.label {
+    position: fixed;
+    font-size: 14px;
+    font-family: "Hahmlet", serif;
+    font-weight: 600;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+.la1{
+    top: 31vh;
+    left: 6vw;
+    opacity: 0;
+}
+
+.la2{
+    top: 44vh;
+    left: 6vw;
+    opacity: 0;
+}
+
+.la3{
+    top: 57vh;
+    left: 6vw;
+    opacity: 0;
+}
+
+.la4{
+    top: 68vh;
+    left: 6vw;
+    opacity: 0;
+}
 
 ul{
     margin-left: 90vw;
@@ -37,6 +90,20 @@ li{
     margin: 0 10px;
     list-style: none;
     border-bottom: 1px solid black;
+}
+
+h1{
+    font-family: "Monomakh", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+h4{
+    font-family: "Hahmlet", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 nav>a{
@@ -72,7 +139,7 @@ nav>a{
     justify-self: center;
     margin: 3% auto;
     border: 2px solid white;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3)
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7)
 }
 .vid>h1{
     display: block;

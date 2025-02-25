@@ -1,9 +1,5 @@
 *{margin: 0; padding: 0;}
 
-body{
-    font-family: ;
-}
-
 img{
     display: block;
 }
@@ -48,6 +44,7 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    overflow: hidden;
 
 }
 
@@ -92,8 +89,9 @@ h4{
     font-size: 50px;
     margin-top: 5%;
     color: rgb(255, 255, 255);
-    font-family: "Black Han Sans", serif;
-    font-weight: 400;
+    font-family: "Hahmlet", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
     font-style: normal;
 
 
