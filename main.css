@@ -1,9 +1,5 @@
 *{margin: 0; padding: 0;}
 
-body{
-    font-family: ;
-}
-
 img{
     display: block;
 }
@@ -33,6 +29,7 @@ li{
     float: left;
     margin: 0 10px;
     list-style: none;
+    border-bottom: 1px solid black;
 }
 
 nav>a{
@@ -47,6 +44,7 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    overflow: hidden;
 
 }
 
@@ -57,10 +55,10 @@ main{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: grayscale(0.4)
+    filter: grayscale(1);
+    transition: all 0.3s ease-in-out;
 
 }
-
 
 .fir{
 
@@ -77,18 +75,24 @@ main{
 
 h1{
     text-align: center;
-    font-size: 100px;
+    font-size: 150px;
     margin-top: 50%;
     color: rgba(255, 255, 255, 0.6);
-
-
+    font-family: "Caveat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h4{
     text-align: center;
     font-size: 50px;
-    margin-top: 10%;
+    margin-top: 5%;
     color: rgb(255, 255, 255);
+    font-family: "Hahmlet", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 
 
 }
