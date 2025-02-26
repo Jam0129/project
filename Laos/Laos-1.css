@@ -136,11 +136,11 @@ nav>a{
 }
 .icontainer > img{
   position: absolute;
-  max-width: 80%;
+  max-width: 100%;
   height: 100%;
   overflow: hidden;
   display: flex;
-  left: 10%;
+
   bottom: 0%;
 }
 
@@ -258,6 +258,7 @@ nav>a{
   height: 10vh;
   margin-left: 12vh;
   margin-top: 1vh;
+  margin-bottom: 1vh;
   float: left;
 }
 .reply .userimg{
@@ -276,24 +277,34 @@ nav>a{
 .otheruser > .name{
   font-weight: bold;
   float: left;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 .otheruser > i{
   float: right;
+  margin-right: 3vh;
 }
 .otheruser > .time{
-  color: #a1a0a0;
+  color: #7a7a7a;
+  margin-top: 4px;
   float: left;
+  font-weight: 300;
 }
 .otheruser > .likey{
-  color: #a1a0a0;
-  margin-left: 30px;
+  color: #7a7a7a;
+  margin-top: 3px;
+  margin-left: 15px;
+  float: left;
+  font-weight: 600;
 }
 .otheruser > .write{
-  color: #a1a0a0;
+  color: #7a7a7a;
+  margin-top: 3px;
   margin-left: 10px;
+  float: left;
+  font-weight: 600;
 }
 /* /comment */
+
 
 
 /* profile2 */
@@ -372,26 +383,16 @@ nav>a{
 /* /dots2 */
 
 
+
 /* profile3 */
-.profile .img3{
-  margin-left: 100px;
-  border: 1px solid #d9d9d9;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  background-image: url(https://togetherfolder.s3.ap-northeast-2.amazonaws.com/profile-shim.jpg);
-  background-size: cover;
-}
-/* /profile3 */
 
 /* image-container3 */
 .icontainer3 > img{
     position: absolute;
-    max-width: 80%;
+    max-width: 100%;
     height: 100%;
     overflow: hidden;
     display: flex;
-    left: 22%;
     bottom: 0%;
 }
 /* image-container3 */
@@ -405,15 +406,6 @@ nav>a{
 /* /like3 */
 
 /* comment3 */
-.comment .userimg3{
-  border: 1px solid #d9d9d9;
-  width: 25px;
-  height: 25px;
-  border-radius: 100%;
-  background-image: url(https://togetherfolder.s3.ap-northeast-2.amazonaws.com/profile-shim.jpg);
-  background-size: cover;
-  float: left;
-}
 .reply .userimg3{
   border: 1px solid #d9d9d9;
   width: 25px;
@@ -430,7 +422,7 @@ nav>a{
 .dots3{
   position: absolute;
   display: flex;
-  left: 50%;
+  left: 45%;
   bottom: 5%;
   gap: 10px;
 }
@@ -446,3 +438,173 @@ nav>a{
   background-color: #ffffff; 
 }
 /* /dots3 */
+
+
+/* profile4 */
+
+/* image-container4 */
+.icontainer4 > img{
+  position: absolute;
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  left: 20%;
+  bottom: 0%;
+}
+/* image-container4 */
+
+/* like4 */
+.like4{
+width: 60%;
+height: 3vh;
+margin-left: 12vh;
+}
+/* /like4 */
+
+/* comment4 */
+.reply .userimg4{
+border: 1px solid #d9d9d9;
+width: 25px;
+height: 25px;
+border-radius: 100%;
+background-image: url(https://togetherfolder.s3.ap-northeast-2.amazonaws.com/Jay_Park.jpg);
+background-size: cover;
+margin-right: 10px;
+float: left;
+}
+/* /comment4 */
+
+/* dots4 */
+.dots4{
+position: absolute;
+display: flex;
+left: 45%;
+bottom: 5%;
+gap: 10px;
+}
+.dots4 span{
+width: 10px;
+height: 10px;
+background-color: #7a7a7a;
+border-radius: 50%;
+cursor: pointer;
+transition: background-color 0.5s;
+}
+.dots4 span.active {
+background-color: #ffffff; 
+}
+/* /dots4 */
+
+
+/* profile5 */
+
+/* image-container5 */
+.icontainer5 > img{
+  position: absolute;
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  left: 20%;
+  bottom: 0%;
+}
+/* image-container5 */
+
+/* like5 */
+.like5{
+width: 60%;
+height: 3vh;
+margin-left: 12vh;
+}
+/* /like5 */
+
+/* comment5 */
+.reply .userimg5{
+border: 1px solid #d9d9d9;
+width: 25px;
+height: 25px;
+border-radius: 100%;
+background-image: url(https://togetherfolder.s3.ap-northeast-2.amazonaws.com/s_terry0129.jpg);
+background-size: cover;
+margin-right: 10px;
+float: left;
+}
+/* /comment5 */
+
+/* dots5 */
+.dots5{
+position: absolute;
+display: flex;
+left: 45%;
+bottom: 5%;
+gap: 10px;
+}
+.dots5 span{
+width: 10px;
+height: 10px;
+background-color: #7a7a7a;
+border-radius: 50%;
+cursor: pointer;
+transition: background-color 0.5s;
+}
+.dots5 span.active {
+background-color: #ffffff; 
+}
+/* /dots5 */
+
+
+/* profile6 */
+
+/* image-container6 */
+.icontainer6 > img{
+  position: absolute;
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  bottom: 0%;
+}
+/* image-container6 */
+
+/* like6 */
+.like6{
+width: 60%;
+height: 3vh;
+margin-left: 12vh;
+}
+/* /like6 */
+
+/* comment6 */
+.reply .userimg6{
+border: 1px solid #d9d9d9;
+width: 25px;
+height: 25px;
+border-radius: 100%;
+background-image: url(https://togetherfolder.s3.ap-northeast-2.amazonaws.com/ho_0320.jpg);
+background-size: cover;
+margin-right: 10px;
+float: left;
+}
+/* /comment6 */
+
+/* dots6 */
+.dots6{
+position: absolute;
+display: flex;
+left: 45%;
+bottom: 5%;
+gap: 10px;
+}
+.dots6 span{
+width: 10px;
+height: 10px;
+background-color: #7a7a7a;
+border-radius: 50%;
+cursor: pointer;
+transition: background-color 0.5s;
+}
+.dots6 span.active {
+background-color: #ffffff; 
+}
+/* /dots6 */
