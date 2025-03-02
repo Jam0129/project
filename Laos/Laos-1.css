@@ -22,19 +22,26 @@ nav{
     z-index: 1;
     background-color: #fff;
 }
-nav > ul{
-    margin-left: 90vw;
+nav a{
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  position: relative;
+  top: 30%;
+  left: 10%;
 }
-nav > ul > li{
-    float: left;
-    margin: 0 10px;
-    list-style: none;
+
+nav ul{
+  margin-left: 90vw;
 }
-nav>a{
-    position: relative;
-    top: 40%;
-    left: 10%;
+
+nav li{
+  float: left;
+  margin: 0 10px;
+  list-style: none;
+  border-bottom: 1px solid black;
 }
+
 /* /header */
 
 /* main */
