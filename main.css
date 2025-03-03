@@ -5,9 +5,9 @@ img{
 }
 
 a{
-text-decoration: none;
-text-align: center;
-color: black;
+    text-decoration: none;
+    text-align: center;
+    color: black;
 }
 
 
@@ -20,12 +20,11 @@ nav{
     z-index: 1;
 }
 
-
-ul{
+nav ul{
     margin-left: 90vw;
 }
 
-li{
+nav li{
     float: left;
     margin: 0 10px;
     list-style: none;
@@ -36,6 +35,15 @@ nav>a{
     position: relative;
     top: 40%;
     left: 10%;
+    width: 221px;
+    height: 41px;
+}
+nav>img{
+    position: relative;
+    top: 40%;
+    left: 10%;
+    width: 221px;
+    height: 41px;
 }
 
 main{
