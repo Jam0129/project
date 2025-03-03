@@ -1,19 +1,24 @@
-*{margin: 0; padding: 0;}
-body{
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
+* {
+    margin: 0;
+    padding: 0;
 }
-img{display: block;}
-a{
-text-decoration: none;
-text-align: center;
-color: #000;
+body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+img {
+    display: block;
+}
+a {
+    text-decoration: none;
+    text-align: center;
+    color: #000;
 }
 
 /* header */
-nav{
+nav {
     width: 100%;
     height: 10vh;
     position: fixed;
@@ -22,597 +27,608 @@ nav{
     z-index: 1;
     background-color: #fff;
 }
-nav a{
-  text-decoration: none;
-  text-align: center;
-  color: black;
-  position: relative;
-  top: 30%;
-  left: 10%;
-  border-bottom: 1px solid black;
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
-nav ul{
-  margin-left: 90vw;
+nav {
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
 }
 
-nav li{
-  float: left;
-  margin: 0 10px;
-  list-style: none;
-  
+nav ul {
+    float: right;
+    margin-right: 10vw;
+    width: 150px;
+}
+
+nav li {
+    float: right;
+    margin: 0 10px;
+    list-style: none;
+    border-bottom: 1px solid black;
+}
+
+.logo {
+    position: relative;
+    top: 40%;
+    left: 10%;
+    width: 250px;
+    height: 50px;
+    display: block;
 }
 
 /* /header */
 
 /* main */
-#main{
-  width: 60%;
-  height: auto;
-  border: 1px solid #d9d9d9;
-  border-top: none;
-  border-bottom: none;
-  margin-top: 10%;
+#main {
+    width: 60%;
+    height: auto;
+    border: 1px solid #d9d9d9;
+    border-top: none;
+    border-bottom: none;
+    margin-top: 10%;
 }
-.container{
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 /* /main */
 
 /* nav */
-.nav{
-  width: 60%;
-  height: 10vh;
-  line-height: 10vh;
-  border: 1px solid #d9d9d9;
-  position: fixed;
-  top: 10%;
-  left: 19.95%;
-  background-color: #fff;
-  z-index: 1;
+.nav {
+    width: 60%;
+    height: 10vh;
+    line-height: 10vh;
+    border: 1px solid #d9d9d9;
+    position: fixed;
+    top: 10%;
+    left: 19.95%;
+    background-color: #fff;
+    z-index: 1;
 }
-.nav a{
-  float: left;
+.nav a {
+    float: left;
 }
-.nav i{
-  position: absolute;
-  left: 5%;
-  top: 30%;
-  font-size: 30px;
+.nav i {
+    position: absolute;
+    left: 5%;
+    top: 30%;
+    font-size: 30px;
 }
-.nav h2{
-  position: absolute;
-  left: 48%;
-  bottom: 5%;
-  font-size: 30px;
+.nav h2 {
+    position: absolute;
+    left: 48%;
+    bottom: 5%;
+    font-size: 30px;
 }
 /* /nav */
 
 /* profile */
-.profile{
-  width: 60%;
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  font-weight: bold;
+.profile {
+    width: 60%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
 }
-.profile > .img{
-  margin-left: 100px;
-  border: 1px solid #d9d9d9;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  background-image: url(https://togetherfolder.s3.ap-northeast-2.amazonaws.com/profile-park.jpg);
-  background-size: cover;
+.profile > .img {
+    margin-left: 100px;
+    border: 1px solid #d9d9d9;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-image: url("https://togetherfolder.s3.ap-northeast-2.amazonaws.com/profile-park.jpg");
+    background-size: cover;
 }
-.user{
-  display: inline-block;
+.user {
+    display: inline-block;
 }
-.user > .name{
-  padding-left: 20px;
-  text-align: center;
+.user > .name {
+    padding-left: 20px;
+    text-align: center;
 }
-.user > .name:hover{
-  color: #a1a0a0;
+.user > .name:hover {
+    color: #a1a0a0;
 }
-.user > .follow{
-  color: #15a2d9;
+.user > .follow {
+    color: #15a2d9;
 }
-.user > .follow:hover{
-  color: #095370;
+.user > .follow:hover {
+    color: #095370;
 }
 /* /profile */
 
 /* image-container */
-.image-container{
-  background-color: aquamarine;
-  position: relative;
-  background-color: black;
-  width: 80%;
-  height: 70vh;
-  left: 10%;
+.image-container {
+    background-color: aquamarine;
+    position: relative;
+    background-color: black;
+    width: 80%;
+    height: 70vh;
+    left: 10%;
 }
-.image-container > video{
-  position: absolute;
-  max-width: 80%;
-  height: 100%;
-  overflow: hidden;
-  left: 10%;
-  bottom: 0%;
+.image-container > video {
+    position: absolute;
+    max-width: 80%;
+    height: 100%;
+    overflow: hidden;
+    left: 10%;
+    bottom: 0;
 }
-.icontainer > img{
-  position: absolute;
-  max-width: 100%;
-  height: 100%;
-  overflow: hidden;
-  display: flex;
+.icontainer > img {
+    position: absolute;
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
 
-  bottom: 0%;
+    bottom: 0;
 }
 
-.image-container > .toggle-right{
-  position: absolute;
-  bottom: 50%;
-  right: 5%;
-  display: flex;
-  align-items: center;
-  background-color: #ffffff00;
-  border: none;
+.image-container > .toggle-right {
+    position: absolute;
+    bottom: 50%;
+    right: 5%;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff00;
+    border: none;
 }
-.toggle-right > i{
-  font-size: 30px;
-  color: white;
-  cursor: pointer;
+.toggle-right > i {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
 }
-.image-container > .toggle-left{
-  position: absolute;
-  bottom: 50%;
-  left: 5%;
-  display: flex;
-  align-items: center;
-  background-color: #ffffff00;
-  border: none;
+.image-container > .toggle-left {
+    position: absolute;
+    bottom: 50%;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff00;
+    border: none;
 }
-.toggle-left > i{
-  font-size: 30px;
-  color: white;
-  cursor: pointer;
+.toggle-left > i {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
 }
-.dots1{
-  position: absolute;
-  display: flex;
-  left: 50%;
-  bottom: 5%;
-  gap: 10px;
+.dots1 {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    bottom: 5%;
+    gap: 10px;
 }
-.dots1 span{
-  width: 10px;
-  height: 10px;
-  background-color: #7a7a7a;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.5s;
+.dots1 span {
+    width: 10px;
+    height: 10px;
+    background-color: #7a7a7a;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.5s;
 }
 .dots1 span.active {
-  background-color: #ffffff; 
+    background-color: #ffffff;
 }
-.image-container img.active, .image-container video.active {
-  display: block;
+.image-container img.active,
+.image-container video.active {
+    display: block;
 }
-.image-container img.hidden, .image-container video.hidden {
-  display: none;
+.image-container img.hidden,
+.image-container video.hidden {
+    display: none;
 }
 /* /image-container */
 
 /* icon */
-.icon{
-  width: 80%;
-  height: 5vh;
-  margin-top: 3vh;
-  margin-left: 10vh;
+.icon {
+    width: 80%;
+    height: 5vh;
+    margin-top: 3vh;
+    margin-left: 10vh;
 }
-.icon button{
-  border: none;
-  background-color: #ffffff00;
+.icon button {
+    border: none;
+    background-color: #ffffff00;
 }
-.icon i{
-  font-size: 30px;
-  margin-left: 1vw;
+.icon i {
+    font-size: 30px;
+    margin-left: 1vw;
 }
-.icon > span:nth-child(4){
-  float: right;
+.icon > span:nth-child(4) {
+    float: right;
 }
 /* /icon */
 
 /* like */
-.like{
-  width: 60%;
-  height: 3vh;
-  margin-left: 12vh;
+.like {
+    width: 60%;
+    height: 3vh;
+    margin-left: 12vh;
 }
 /* /like */
 
 /* comment */
-.comment{
-  width: 80%;
-  height: 15vh;
-  margin-left: 12vh;
+.comment {
+    width: 80%;
+    height: 15vh;
+    margin-left: 12vh;
 }
-.comment .userimg{
-  border: 1px solid #d9d9d9;
-  width: 25px;
-  height: 25px;
-  border-radius: 100%;
-  background-image: url(https://togetherfolder.s3.ap-northeast-2.amazonaws.com/profile-park.jpg);
-  background-size: cover;
-  float: left;
+.comment .userimg {
+    border: 1px solid #d9d9d9;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-image: url("https://togetherfolder.s3.ap-northeast-2.amazonaws.com/profile-park.jpg");
+    background-size: cover;
+    float: left;
 }
-.comment .username{
-  margin-left: 10px;
-  float: left;
+.comment .username {
+    margin-left: 10px;
+    float: left;
 }
-.comment .cm{
-  font-size: 15px;
+.comment .cm {
+    font-size: 15px;
 }
-.comment .hashtag{
-  color: #00376b;
-  font-size: 15px;
-  float: left;
+.comment .hashtag {
+    color: #00376b;
+    font-size: 15px;
+    float: left;
 }
-.reply{
-  width: 80%;
-  height: 10vh;
-  margin-left: 12vh;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-  float: left;
+.reply {
+    width: 80%;
+    height: 10vh;
+    margin-left: 12vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    float: left;
 }
-.reply .userimg{
-  border: 1px solid #d9d9d9;
-  width: 25px;
-  height: 25px;
-  border-radius: 100%;
-  background-image: url(https://togetherfolder.s3.ap-northeast-2.amazonaws.com/Laos/hangunza.jpg);
-  background-size: cover;
-  margin-right: 10px;
-  float: left;
+.reply .userimg {
+    border: 1px solid #d9d9d9;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-image: url("https://togetherfolder.s3.ap-northeast-2.amazonaws.com/Laos/hangunza.jpg");
+    background-size: cover;
+    margin-right: 10px;
+    float: left;
 }
-.reply .otheruser{
-  font-size: 13px;
+.reply .otheruser {
+    font-size: 13px;
 }
-.otheruser > .name{
-  font-weight: bold;
-  float: left;
-  margin-right: 5px;
+.otheruser > .name {
+    font-weight: bold;
+    float: left;
+    margin-right: 5px;
 }
-.otheruser > i{
-  float: right;
-  margin-right: 3vh;
+.otheruser > i {
+    float: right;
+    margin-right: 3vh;
 }
-.otheruser > .time{
-  color: #7a7a7a;
-  margin-top: 4px;
-  float: left;
-  font-weight: 300;
+.otheruser > .time {
+    color: #7a7a7a;
+    margin-top: 4px;
+    float: left;
+    font-weight: 300;
 }
-.otheruser > .likey{
-  color: #7a7a7a;
-  margin-top: 3px;
-  margin-left: 15px;
-  float: left;
-  font-weight: 600;
+.otheruser > .likey {
+    color: #7a7a7a;
+    margin-top: 3px;
+    margin-left: 15px;
+    float: left;
+    font-weight: 600;
 }
-.otheruser > .write{
-  color: #7a7a7a;
-  margin-top: 3px;
-  margin-left: 10px;
-  float: left;
-  font-weight: 600;
+.otheruser > .write {
+    color: #7a7a7a;
+    margin-top: 3px;
+    margin-left: 10px;
+    float: left;
+    font-weight: 600;
 }
 /* /comment */
 
-
-
 /* profile2 */
-.profile .img2{
-  margin-left: 100px;
-  border: 1px solid #d9d9d9;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  background-image: url(https://togetherfolder.s3.ap-northeast-2.amazonaws.com/profile-shim.jpg);
-  background-size: cover;
+.profile .img2 {
+    margin-left: 100px;
+    border: 1px solid #d9d9d9;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-image: url("https://togetherfolder.s3.ap-northeast-2.amazonaws.com/profile-shim.jpg");
+    background-size: cover;
 }
 /* /profile2 */
 
 /* image-container2 */
-.icontainer2 > img{
+.icontainer2 > img {
     position: absolute;
     max-width: 80%;
     height: 100%;
     overflow: hidden;
     display: flex;
     left: 22%;
-    bottom: 0%;
+    bottom: 0;
 }
 /* image-container2 */
 
 /* like2 */
-.like2{
-  width: 60%;
-  height: 3vh;
-  margin-left: 12vh;
+.like2 {
+    width: 60%;
+    height: 3vh;
+    margin-left: 12vh;
 }
 /* /like2 */
 
 /* comment2 */
-.comment .userimg2{
-  border: 1px solid #d9d9d9;
-  width: 25px;
-  height: 25px;
-  border-radius: 100%;
-  background-image: url(https://togetherfolder.s3.ap-northeast-2.amazonaws.com/profile-shim.jpg);
-  background-size: cover;
-  float: left;
+.comment .userimg2 {
+    border: 1px solid #d9d9d9;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-image: url("https://togetherfolder.s3.ap-northeast-2.amazonaws.com/profile-shim.jpg");
+    background-size: cover;
+    float: left;
 }
-.reply .userimg2{
-  border: 1px solid #d9d9d9;
-  width: 25px;
-  height: 25px;
-  border-radius: 100%;
-  background-image: url(https://togetherfolder.s3.ap-northeast-2.amazonaws.com/ho_0320.jpg);
-  background-size: cover;
-  margin-right: 10px;
-  float: left;
+.reply .userimg2 {
+    border: 1px solid #d9d9d9;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-image: url("https://togetherfolder.s3.ap-northeast-2.amazonaws.com/ho_0320.jpg");
+    background-size: cover;
+    margin-right: 10px;
+    float: left;
 }
 /* /comment2 */
 
 /* dots2 */
-.dots2{
-  position: absolute;
-  display: flex;
-  left: 50%;
-  bottom: 5%;
-  gap: 10px;
+.dots2 {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    bottom: 5%;
+    gap: 10px;
 }
-.dots2 span{
-  width: 10px;
-  height: 10px;
-  background-color: #7a7a7a;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.5s;
+.dots2 span {
+    width: 10px;
+    height: 10px;
+    background-color: #7a7a7a;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.5s;
 }
 .dots2 span.active {
-  background-color: #ffffff; 
+    background-color: #ffffff;
 }
 /* /dots2 */
-
-
 
 /* profile3 */
 
 /* image-container3 */
-.icontainer3 > img{
+.icontainer3 > img {
     position: absolute;
     max-width: 100%;
     height: 100%;
     overflow: hidden;
     display: flex;
-    bottom: 0%;
+    bottom: 0;
 }
 /* image-container3 */
 
 /* like3 */
-.like3{
-  width: 60%;
-  height: 3vh;
-  margin-left: 12vh;
+.like3 {
+    width: 60%;
+    height: 3vh;
+    margin-left: 12vh;
 }
 /* /like3 */
 
 /* comment3 */
-.reply .userimg3{
-  border: 1px solid #d9d9d9;
-  width: 25px;
-  height: 25px;
-  border-radius: 100%;
-  background-image: url(https://togetherfolder.s3.ap-northeast-2.amazonaws.com/s_terry0129.jpg);
-  background-size: cover;
-  margin-right: 10px;
-  float: left;
+.reply .userimg3 {
+    border: 1px solid #d9d9d9;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-image: url("https://togetherfolder.s3.ap-northeast-2.amazonaws.com/s_terry0129.jpg");
+    background-size: cover;
+    margin-right: 10px;
+    float: left;
 }
 /* /comment3 */
 
 /* dots3 */
-.dots3{
-  position: absolute;
-  display: flex;
-  left: 45%;
-  bottom: 5%;
-  gap: 10px;
+.dots3 {
+    position: absolute;
+    display: flex;
+    left: 45%;
+    bottom: 5%;
+    gap: 10px;
 }
-.dots3 span{
-  width: 10px;
-  height: 10px;
-  background-color: #7a7a7a;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.5s;
+.dots3 span {
+    width: 10px;
+    height: 10px;
+    background-color: #7a7a7a;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.5s;
 }
 .dots3 span.active {
-  background-color: #ffffff; 
+    background-color: #ffffff;
 }
 /* /dots3 */
-
 
 /* profile4 */
 
 /* image-container4 */
-.icontainer4 > img{
-  position: absolute;
-  max-width: 100%;
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-  left: 20%;
-  bottom: 0%;
+.icontainer4 > img {
+    position: absolute;
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    left: 20%;
+    bottom: 0;
 }
 /* image-container4 */
 
 /* like4 */
-.like4{
-width: 60%;
-height: 3vh;
-margin-left: 12vh;
+.like4 {
+    width: 60%;
+    height: 3vh;
+    margin-left: 12vh;
 }
 /* /like4 */
 
 /* comment4 */
-.reply .userimg4{
-border: 1px solid #d9d9d9;
-width: 25px;
-height: 25px;
-border-radius: 100%;
-background-image: url(https://togetherfolder.s3.ap-northeast-2.amazonaws.com/Jay_Park.jpg);
-background-size: cover;
-margin-right: 10px;
-float: left;
+.reply .userimg4 {
+    border: 1px solid #d9d9d9;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-image: url("https://togetherfolder.s3.ap-northeast-2.amazonaws.com/Jay_Park.jpg");
+    background-size: cover;
+    margin-right: 10px;
+    float: left;
 }
 /* /comment4 */
 
 /* dots4 */
-.dots4{
-position: absolute;
-display: flex;
-left: 45%;
-bottom: 5%;
-gap: 10px;
+.dots4 {
+    position: absolute;
+    display: flex;
+    left: 45%;
+    bottom: 5%;
+    gap: 10px;
 }
-.dots4 span{
-width: 10px;
-height: 10px;
-background-color: #7a7a7a;
-border-radius: 50%;
-cursor: pointer;
-transition: background-color 0.5s;
+.dots4 span {
+    width: 10px;
+    height: 10px;
+    background-color: #7a7a7a;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.5s;
 }
 .dots4 span.active {
-background-color: #ffffff; 
+    background-color: #ffffff;
 }
 /* /dots4 */
-
 
 /* profile5 */
 
 /* image-container5 */
-.icontainer5 > img{
-  position: absolute;
-  max-width: 100%;
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-  left: 20%;
-  bottom: 0%;
+.icontainer5 > img {
+    position: absolute;
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    left: 20%;
+    bottom: 0;
 }
 /* image-container5 */
 
 /* like5 */
-.like5{
-width: 60%;
-height: 3vh;
-margin-left: 12vh;
+.like5 {
+    width: 60%;
+    height: 3vh;
+    margin-left: 12vh;
 }
 /* /like5 */
 
 /* comment5 */
-.reply .userimg5{
-border: 1px solid #d9d9d9;
-width: 25px;
-height: 25px;
-border-radius: 100%;
-background-image: url(https://togetherfolder.s3.ap-northeast-2.amazonaws.com/s_terry0129.jpg);
-background-size: cover;
-margin-right: 10px;
-float: left;
+.reply .userimg5 {
+    border: 1px solid #d9d9d9;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-image: url("https://togetherfolder.s3.ap-northeast-2.amazonaws.com/s_terry0129.jpg");
+    background-size: cover;
+    margin-right: 10px;
+    float: left;
 }
 /* /comment5 */
 
 /* dots5 */
-.dots5{
-position: absolute;
-display: flex;
-left: 45%;
-bottom: 5%;
-gap: 10px;
+.dots5 {
+    position: absolute;
+    display: flex;
+    left: 45%;
+    bottom: 5%;
+    gap: 10px;
 }
-.dots5 span{
-width: 10px;
-height: 10px;
-background-color: #7a7a7a;
-border-radius: 50%;
-cursor: pointer;
-transition: background-color 0.5s;
+.dots5 span {
+    width: 10px;
+    height: 10px;
+    background-color: #7a7a7a;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.5s;
 }
 .dots5 span.active {
-background-color: #ffffff; 
+    background-color: #ffffff;
 }
 /* /dots5 */
-
 
 /* profile6 */
 
 /* image-container6 */
-.icontainer6 > img{
-  position: absolute;
-  max-width: 100%;
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-  bottom: 0%;
+.icontainer6 > img {
+    position: absolute;
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    bottom: 0;
 }
 /* image-container6 */
 
 /* like6 */
-.like6{
-width: 60%;
-height: 3vh;
-margin-left: 12vh;
+.like6 {
+    width: 60%;
+    height: 3vh;
+    margin-left: 12vh;
 }
 /* /like6 */
 
 /* comment6 */
-.reply .userimg6{
-border: 1px solid #d9d9d9;
-width: 25px;
-height: 25px;
-border-radius: 100%;
-background-image: url(https://togetherfolder.s3.ap-northeast-2.amazonaws.com/ho_0320.jpg);
-background-size: cover;
-margin-right: 10px;
-float: left;
+.reply .userimg6 {
+    border: 1px solid #d9d9d9;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-image: url("https://togetherfolder.s3.ap-northeast-2.amazonaws.com/ho_0320.jpg");
+    background-size: cover;
+    margin-right: 10px;
+    float: left;
 }
 /* /comment6 */
 
 /* dots6 */
-.dots6{
-position: absolute;
-display: flex;
-left: 45%;
-bottom: 5%;
-gap: 10px;
+.dots6 {
+    position: absolute;
+    display: flex;
+    left: 45%;
+    bottom: 5%;
+    gap: 10px;
 }
-.dots6 span{
-width: 10px;
-height: 10px;
-background-color: #7a7a7a;
-border-radius: 50%;
-cursor: pointer;
-transition: background-color 0.5s;
+.dots6 span {
+    width: 10px;
+    height: 10px;
+    background-color: #7a7a7a;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.5s;
 }
 .dots6 span.active {
-background-color: #ffffff; 
+    background-color: #ffffff;
 }
 /* /dots6 */

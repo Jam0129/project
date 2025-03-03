@@ -1,37 +1,25 @@
-*{margin: 0; padding: 0;}
-
-
-body {
-    background: url("https://togetherfolder.s3.ap-northeast-2.amazonaws.com/fukuoka/japan_marin2.jpg") center center, no-repeat,
-     rgba(250, 242, 242, 0.85);
-    background-blend-mode: overlay;
-    transition:all 0.3s ease-in-out;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-img,video{
+body {
+    background: url("https://togetherfolder.s3.ap-northeast-2.amazonaws.com/fukuoka/japan_marin2.jpg") center center, no-repeat, rgba(250, 242, 242, 0.85);
+    background-blend-mode: overlay;
+    transition: all 0.3s ease-in-out;
+}
+
+img,
+video {
     display: block;
 }
 
-nav a{
+a {
     text-decoration: none;
-    text-align: center;
     color: black;
 }
 
-nav ul{
-    margin-left: 90vw;
-}
-
-nav li{
-    float: left;
-    margin: 0 10px;
-    list-style: none;
-    border-bottom: 1px solid black;
-}
-
-
-
-nav{
+nav {
     width: 100%;
     height: 10vh;
     position: fixed;
@@ -40,13 +28,29 @@ nav{
     z-index: 1;
 }
 
-nav>a{
+nav ul {
+    float: right;
+    margin-right: 10vw;
+    width: 150px;
+}
+
+nav li {
+    float: right;
+    margin: 0 10px;
+    list-style: none;
+    border-bottom: 1px solid black;
+}
+
+.logo {
     position: relative;
     top: 40%;
     left: 10%;
+    width: 250px;
+    height: 50px;
+    display: block;
 }
 
-.control{
+.control {
     width: 0.5vw;
     height: 50vh;
     border: 1px solid rgb(255, 255, 255);
@@ -57,7 +61,7 @@ nav>a{
     overflow: hidden;
 }
 
-.contbar{
+.contbar {
     background-color: rgb(255, 185, 185);
     width: 0.5vw;
     height: 50vh;
@@ -75,38 +79,38 @@ nav>a{
     transition: all 0.2s ease-in-out;
 }
 
-.la1{
+.la1 {
     top: 31vh;
     left: 6vw;
     opacity: 0;
 }
 
-.la2{
+.la2 {
     top: 44vh;
     left: 6vw;
     opacity: 0;
 }
 
-.la3{
+.la3 {
     top: 57vh;
     left: 6vw;
     opacity: 0;
 }
 
-.la4{
+.la4 {
     top: 68vh;
     left: 6vw;
     opacity: 0;
 }
 
-h1{
+h1 {
     font-family: "Monomakh", serif;
     font-weight: 400;
     font-style: normal;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
-h4{
+h4 {
     font-family: "Hahmlet", serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -114,28 +118,22 @@ h4{
     font-size: 24px;
 }
 
-
-
-.container{
+.container {
     width: 100%;
     height: 100vh;
 }
 
-
-
-.item img{
+.item img {
     background-size: cover center center;
     width: 60%;
     height: auto;
     justify-self: center;
     border: 2px solid white;
     margin: 3% auto;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7)
-    
-
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
 }
 
-.item video{
+.item video {
     max-width: 100%;
     width: 100%;
     height: auto;
@@ -143,24 +141,24 @@ h4{
     justify-self: center;
     margin: 3% auto;
     border: 2px solid white;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7)
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
 }
-.vid>h1{
+.vid > h1 {
     display: block;
     margin: 5% auto;
 }
 
-.grid{
-    margin:10% 10%;
+.grid {
+    margin: 10%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: auto;  
+    grid-template-rows: auto;
     align-items: center;
     justify-items: center;
     width: 80%;
 }
 
-.item{
+.item {
     width: 100%;
     text-align: center;
 }
