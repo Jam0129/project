@@ -29,6 +29,7 @@ nav a{
   position: relative;
   top: 30%;
   left: 10%;
+  border-bottom: 1px solid black;
 }
 
 nav ul{
@@ -39,7 +40,7 @@ nav li{
   float: left;
   margin: 0 10px;
   list-style: none;
-  border-bottom: 1px solid black;
+  
 }
 
 /* /header */
