@@ -1,6 +1,13 @@
 *{padding: 0; margin: 0;}
 
-img{display: block;}
+
+img{
+    display: block;}
+
+a{
+    text-decoration: none;
+    text-align: center;
+}
 
 nav a{
     text-decoration: none;
@@ -36,7 +43,20 @@ nav>a{
 }
 
 body{
-background-color: beige;}
+    background: url(https://togetherfolder.s3.ap-northeast-2.amazonaws.com/Cebu/cebu_maktan1.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.back{
+    width: 100%;
+    height: 40vh;
+    background-color: rgba(245, 245, 220, 0.658);
+    position: absolute;
+    top: 60%;
+    left: 0;
+    z-index: -1;
+}
 
 .main{
     display: flex;
@@ -52,6 +72,8 @@ background-color: beige;}
     border-radius: 5%;
     margin: 1% 1%;
     margin-top: 10%;
+    position: relative;
+    overflow: hidden;
 
     
 
@@ -97,7 +119,7 @@ background-color: beige;}
 }
 
 .viewfont{
-    font-size: 28px;
+    font-size: 36px;
     color: rgb(255, 255, 255);
     font-family: "Dancing Script", serif;
     font-optical-sizing: auto;
@@ -129,6 +151,21 @@ background-color: beige;}
     color: white;
 }
 
+.middle{
+    position: absolute;
+    top: 80%;
+    right: 20%;
+    text-align: center;
+    color: white;
+    font-family: "Caveat", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 80px;
+    display: none;
+}
+
+
 .down{
     width: 100%;
     height: 5vh;
@@ -140,10 +177,10 @@ background-color: beige;}
     margin-top: 60%;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
-    font-family: "Noto Sans KR", serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
+    font-family: "Jua", serif;
+    font-weight: 100;
     font-style: normal;
+    display: block;
 }
 .bottom{
     width: 100%;
@@ -155,10 +192,10 @@ background-color: beige;}
     font-size: 24px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
-    font-family: "Noto Sans KR", serif;
-    font-optical-sizing: auto;
+    font-family: "Jua", serif;
     font-weight: 400;
     font-style: normal;
+    display: block;
     
 }
 

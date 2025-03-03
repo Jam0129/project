@@ -1,74 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cebu</title>
-    <link rel="stylesheet" href="cebu.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400..700&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>cebu</title>
+        <link rel="stylesheet" href="cebu.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400..700&family=Noto+Sans+KR:wght@100..900&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400..700&family=Jua&family=Noto+Sans+KR:wght@100..900&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Sigmar&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="cebu.js"></script>            
+    </head>
+    <body>
 
-    <nav>
-        <a href="../main.html" method="get"><img src="https://togetherfolder.s3.ap-northeast-2.amazonaws.com/logo_travel_black.png" alt=""></a>
-        <ul>
-            <li><a href="#">박건우</a></li>
-            <li><a href="#">심재민</a></li>
-        </ul>
+        <div class="back"></div>
 
-    </nav>
+        <nav>
+            <a href="../main.html" method="get"><img
+                src="https://togetherfolder.s3.ap-northeast-2.amazonaws.com/logo_travel_black.png"
+                alt=""></a>
+            <ul>
+                <li>
+                    <a href="#">박건우</a>
+                </li>
+                <li>
+                    <a href="#">심재민</a>
+                </li>
+            </ul>
 
-    <main class="main">
-        <div class="container oslob">
-            <div class="item"><!-- 고래상어사진 -->
-                <div class="up">
-                    <h4 class="viewfont">Cebu</h4>
-                    <h1 class="viewnum">01</h1>
-                    <div class="circle">HOT</div>    
-                </div>
+        </nav>
+
+        <main class="main">
+            <div class="container oslob">
+                <a href="#">
+                    <div class="item">
+                        <!-- 고래상어사진 -->
+                        <div class="up">
+                            <h4 class="viewfont">Cebu</h4>
+                            <h1 class="viewnum">01</h1>
+                            <div class="circle">HOT</div>
+                        </div>
+                        <div class="middle">Oslob</div>
+                    </div>
+                    <div class="down">
+                        오슬롭</div>
+                    <div class="bottom">
+                        고래상어, 투말록 폭포, 서밀론 섬</div>
+                </a>
             </div>
-            <div class="down"> 오슬롭</div>
-            <div class="bottom"> 고래상어, 투말록 폭포, 서밀론 섬</div>
-        </div>
-
-        <div class="container moal">
-            <div class="item"><!-- 거북이사진 -->
-                <div class="up">
-                    <h4 class="viewfont">Cebu</h4>
-                    <h1 class="viewnum">02</h1>
-                    <div class="circle">HOT</div>    
-                </div>
+            <div class="container moal">
+                <a href="#">
+                    <div class="item">
+                        <!-- 거북이사진 -->
+                        <div class="up">
+                            <h4 class="viewfont">Cebu</h4>
+                            <h1 class="viewnum">02</h1>
+                            <div class="circle">HOT</div>
+                        </div>
+                        <div class="middle">Moalboal</div>
+                    </div>
+                    <div class="down">
+                        모알보알</div>
+                    <div class="bottom">
+                        캐니어닝, 정어리떼, 거북이</div>
+                </a>
             </div>
-            <div class="down"> 모알보알</div>
-            <div class="bottom"> 캐니어닝, 정어리떼, 거북이</div>
-        </div>
 
-        <div class="container cebcity">
-            <div class="item"><!-- 블루워터호텔 -->
-                <div class="up">
-                    <h4 class="viewfont">Cebu</h4>
-                    <h1 class="viewnum">03</h1>
-                    <div class="circle">HOT</div>    
-                </div>
+            <div class="container cebcity">
+                <a href="#">
+                    <div class="item">
+                        <!-- 블루워터호텔 -->
+                        <div class="up">
+                            <h4 class="viewfont">Cebu</h4>
+                            <h1 class="viewnum">03</h1>
+                            <div class="circle">HOT</div>
+                        </div>
+                        <div class="middle">Cebucity</div>
+                    </div>
+                    <div class="down">
+                        세부시티</div>
+                    <div class="bottom">카지노, 야시장</div>
+
+                </a>
+
             </div>
-            <div class="down"> 세부시티</div>
-            <div class="bottom">카지노, 야시장</div>
-        </div>
 
-        <div class="container maktan">
-            <div class="item"><!-- 호텔사진 -->
-                <div class="up">
-                    <h4 class="viewfont">Cebu</h4>
-                    <h1 class="viewnum">04</h1>
-                    <div class="circle">HOT</div>    
-                </div>
+            <div class="container maktan">
+                <a href="#">
+                    <div class="item">
+                        <!-- 호텔사진 -->
+                        <div class="up">
+                            <h4 class="viewfont">Cebu</h4>
+                            <h1 class="viewnum">04</h1>
+                            <div class="circle">HOT</div>
+                        </div>
+                        <div class="middle">Mactan</div>
+                    </div>
+                    <div class="down">
+                        막탄섬</div>
+                    <div class="bottom">
+                        골드호핑, 휴양호텔</div>
+                </a>
+
             </div>
-            <div class="down"> 막탄섬</div>
-            <div class="bottom"> 골드호핑, 휴양호텔</div>
-        </div>
-    </main>
+        </main>
 
-</body>
+    </body>
 </html>
