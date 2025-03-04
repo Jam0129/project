@@ -48,8 +48,8 @@ nav>a{
 
 .logo{
     position: relative;
-    top: 40%;
-    left: 10%;
+    top: 50%;
+    left: 4%;
     width: 250px;
     height: 50px;
     display: block;
@@ -112,15 +112,15 @@ h1{
     font-family: "Monomakh", serif;
     font-weight: 400;
     font-style: normal;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 h4{
-    font-family: "Hahmlet", serif;
+    font-family: 'OTEnjoystoriesBA';
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-size: 24px;
+    font-size: 48px;
 }
 
 
@@ -139,7 +139,7 @@ h4{
     justify-self: center;
     border: 2px solid white;
     margin: 3% auto;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7)
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5)
     
 
 }
@@ -152,7 +152,7 @@ h4{
     justify-self: center;
     margin: 3% auto;
     border: 2px solid white;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7)
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5)
 }
 .vid>h1{
     display: block;
@@ -172,4 +172,78 @@ h4{
 .item{
     width: 100%;
     text-align: center;
+}
+
+
+@media screen and (max-width:767px) {
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    .logo {
+        width: 150px;
+        height: auto;
+    }
+
+    .logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .control,.label{
+        display: none;
+    }
+
+    .grid{
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 20px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 100px;
+
+    }
+
+    h4{
+        font-size: 20px;
+    }
+
+    .item img{
+        background-size: cover center center;
+        width: 80%;
+        height: auto;
+        justify-self: center;
+        border: 2px solid white;
+        margin: 20px auto;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5)
+        
+    
+    }
+
+    .item video {
+        width: 90%; 
+        display: block;
+        margin: 20px auto;  
+    }
+
+    .grid .first{
+
+        order: -1;
+
+    }
+}
+
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
