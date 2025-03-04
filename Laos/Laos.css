@@ -18,21 +18,23 @@ a {
 }
 
 /* header */
-nav {
-    width: 100%;
-    height: 10vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    background-color: #fff;
-}
-
-a {
+nav a {
     text-decoration: none;
+    text-align: center;
     color: black;
 }
 
+nav ul {
+    margin-left: 90vw;
+}
+
+nav li {
+    float: left;
+    margin: 0 10px;
+    list-style: none;
+    border-bottom: 1px solid black;
+}
+
 nav {
     width: 100%;
     height: 10vh;
@@ -40,19 +42,13 @@ nav {
     top: 0;
     right: 0;
     z-index: 1;
+    background-color: white;
 }
 
-nav ul {
-    float: right;
-    margin-right: 10vw;
-    width: 150px;
-}
-
-nav li {
-    float: right;
-    margin: 0 10px;
-    list-style: none;
-    border-bottom: 1px solid black;
+nav > a {
+    position: relative;
+    top: 40%;
+    left: 10%;
 }
 
 .logo {
@@ -73,7 +69,7 @@ nav li {
     border: 1px solid #d9d9d9;
     border-top: none;
     border-bottom: none;
-    margin-top: 10%;
+    margin-top: 9.5%;
 }
 .container {
     max-width: 1200px;
@@ -166,10 +162,10 @@ nav li {
 .icontainer > img {
     position: absolute;
     max-width: 100%;
+    width: 100%;
     height: 100%;
     overflow: hidden;
     display: flex;
-
     bottom: 0;
 }
 
@@ -356,7 +352,6 @@ nav li {
     overflow: hidden;
     display: flex;
     left: 22%;
-    bottom: 0;
 }
 /* image-container2 */
 
@@ -420,7 +415,6 @@ nav li {
     height: 100%;
     overflow: hidden;
     display: flex;
-    bottom: 0;
 }
 /* image-container3 */
 
@@ -475,7 +469,7 @@ nav li {
     height: 100%;
     overflow: hidden;
     display: flex;
-    left: 20%;
+    left: 22%;
     bottom: 0;
 }
 /* image-container4 */
@@ -531,7 +525,7 @@ nav li {
     height: 100%;
     overflow: hidden;
     display: flex;
-    left: 20%;
+    left: 22%;
     bottom: 0;
 }
 /* image-container5 */
@@ -584,6 +578,7 @@ nav li {
 .icontainer6 > img {
     position: absolute;
     max-width: 100%;
+    width: 100%;
     height: 100%;
     overflow: hidden;
     display: flex;

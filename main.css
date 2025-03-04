@@ -1,18 +1,17 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+*{margin: 0; padding: 0;}
 
-img {
+img{
     display: block;
 }
 
-a {
+a{
     text-decoration: none;
+
     color: black;
 }
 
-nav {
+
+nav{
     width: 100%;
     height: 10vh;
     position: fixed;
@@ -21,20 +20,18 @@ nav {
     z-index: 1;
 }
 
-nav ul {
-    float: right;
-    margin-right: 10vw;
-    width: 150px;
+nav ul{
+    margin-left: 90vw;
 }
 
-nav li {
-    float: right;
+nav li{
+    float: left;
     margin: 0 10px;
     list-style: none;
     border-bottom: 1px solid black;
 }
 
-.logo {
+.logo{
     position: relative;
     top: 40%;
     left: 10%;
@@ -43,7 +40,8 @@ nav li {
     display: block;
 }
 
-main {
+
+main{
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -53,9 +51,7 @@ main {
 
 }
 
-.fir,
-.sec,
-.thi {
+.fir,.sec,.thi{
     width: 28%;
     height: 100vh;
     flex: 1 1 28%;
@@ -67,20 +63,20 @@ main {
 
 }
 
-.fir {
+.fir{
 
-    background-image: url("https://togetherfolder.s3.ap-northeast-2.amazonaws.com/fuckuoka_main.jpg");
+    background-image: url(https://togetherfolder.s3.ap-northeast-2.amazonaws.com/fuckuoka_main.jpg);
 }
-.sec {
+.sec{
 
-    background-image: url("https://togetherfolder.s3.ap-northeast-2.amazonaws.com/laos_main.jpg");
+    background-image: url(https://togetherfolder.s3.ap-northeast-2.amazonaws.com/laos_main.jpg);
 }
-.thi {
+.thi{
 
-    background-image: url("https://togetherfolder.s3.ap-northeast-2.amazonaws.com/cebu_main.jpg");
+    background-image: url(https://togetherfolder.s3.ap-northeast-2.amazonaws.com/cebu_main.jpg);
 }
 
-h1 {
+h1{
     text-align: center;
     font-size: 150px;
     margin-top: 50%;
@@ -91,7 +87,7 @@ h1 {
     font-style: normal;
 }
 
-h4 {
+h4{
     text-align: center;
     font-size: 50px;
     margin-top: 5%;
@@ -101,8 +97,9 @@ h4 {
     font-weight: 600;
     font-style: normal;
 
+
 }
-#profile {
+#profile{
     float: left;
     margin: 0 auto;
 
