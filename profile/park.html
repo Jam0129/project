@@ -25,7 +25,6 @@
                 color: black;
             }
 
-
             nav{
                 width: 100%;
                 height: 10vh;
@@ -49,13 +48,19 @@
             .logo{
                 position: relative;
                 top: 50%;
-                left: 4%;
+                left: 3.2%;
                 width: 250px;
                 height: 50px;
                 display: block;
             }
 
-            .profile {
+            .profile{
+                width: 100%;
+                height: 25vh;
+                margin-top: 10vh;
+            }
+
+            .profile-border {
                 width: 10%;
                 height: 25vh;
                 margin: 2% auto;
@@ -69,7 +74,13 @@
                 font-weight: 800;
             }
 
+            .profile-border > img {
+                width: 10vw;
+                height: auto;
+            }
+
             h4 {
+                margin-top: 3%;
                 margin-bottom: 3%;
                 font-size: 24px;
                 text-align: center;
@@ -77,11 +88,6 @@
                 font-optical-sizing: auto;
                 font-style: normal;
                 font-weight: 800;
-            }
-
-            .profile > img {
-                width: 10vw;
-                height: auto;
             }
 
             .intro {
@@ -101,14 +107,16 @@
 
         <nav>
             <a href="../index.html" class="logo"><img
-                src="https://togetherfolder.s3.ap-northeast-2.amazonaws.com/logo_travel_white.png"
+                src="https://togetherfolder.s3.ap-northeast-2.amazonaws.com/logo_travel_black.png"
                 alt=""></a>
         </nav>
 
         <div class="profile">
-            <img
-                src="https://togetherfolder.s3.ap-northeast-2.amazonaws.com/profile-park.jpg"
-                alt="">
+            <div class="profile-border">
+                <img
+                    src="https://togetherfolder.s3.ap-northeast-2.amazonaws.com/profile-park.jpg"
+                    alt="">
+            </div>
         </div>
 
         <h4>"저는 언제나 목마릅니다."</h4>
