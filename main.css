@@ -1,0 +1,189 @@
+*{margin: 0; padding: 0;}
+
+img{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+
+    color: black;
+}
+
+
+nav{
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+nav ul{
+    margin-left: 90vw;
+}
+
+nav li{
+    float: left;
+    margin: 0 10px;
+    list-style: none;
+    border-bottom: 1px solid black;
+}
+
+.logo{
+    position: relative;
+    top: 50%;
+    left: 4%;
+    width: 250px;
+    height: 50px;
+    display: block;
+}
+
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.fir,.sec,.thi{
+    width: 28%;
+    height: 100vh;
+    flex: 1 1 28%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(1);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.fir{
+
+    background-image: url(https://togetherfolder.s3.ap-northeast-2.amazonaws.com/fuckuoka_main.jpg);
+}
+.sec{
+
+    background-image: url(https://togetherfolder.s3.ap-northeast-2.amazonaws.com/laos_main.jpg);
+}
+.thi{
+
+    background-image: url(https://togetherfolder.s3.ap-northeast-2.amazonaws.com/cebu_main.jpg);
+}
+
+h1{
+    text-align: center;
+    font-size: 150px;
+    margin-top: 50%;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: "Caveat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h4{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 5%;
+    color: rgb(255, 255, 255);
+    font-family: "Hahmlet", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
+
+}
+#profile{
+    float: left;
+    margin: 0 auto;
+
+}
+
+
+@media screen and (max-width:767px) {
+
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    .logo {
+        width: 150px;
+        height: auto;
+    }
+
+    .logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    main{
+        width: 100%;
+       height: 100vh;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    
+    }
+
+    .fir{
+        width: 100%;
+        height: 33.33vh;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: grayscale(1);
+        transition: all 0.3s ease-in-out;
+    
+    }
+
+    .sec{
+        width: 100%;
+        height: 33.33vh;
+        background-position: 20% 70%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: grayscale(1);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .thi{
+        width: 100%;
+        height: 33.33vh;
+        background-position: 50% 20%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: grayscale(1);
+        transition: all 0.3s ease-in-out;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 100px;
+        margin-top: 50px;
+        color: rgba(255, 255, 255, 0.6);
+        font-family: "Caveat", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    h4{
+        font-size: 30px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+}
